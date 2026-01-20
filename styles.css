@@ -1,1 +1,47 @@
 /* your code here */
+i{
+	padding: 10px;
+	border-radius: 50%;
+	background-color: black;
+	margin-left: 5px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px 10px;
+}
+
+span{
+	font-size: 25px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+h4{
+	/* padding-left: 40px */
+}
+
+.link-boxes{
+	display: flex;
+	padding-left: 0;
+	gap: 80px;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-details{
+	display: flex;
+	justify-content: space-between;
+	background-color: #333;
+	padding: 0 10px;
+}
