@@ -1,0 +1,141 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #dcdcdc;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    /* Top row */
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .footer-top h2 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .facebook { background: #1877f2; }
+    .twitter { background: #1da1f2; }
+    .instagram { background: #e1306c; }
+    .linkedin { background: #0a66c2; }
+    .youtube { background: #ff0000; }
+
+    /* Columns */
+    .footer-columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+
+    .footer-columns h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-weight: normal;
+      border-bottom: 1px solid #666;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .footer-columns ul {
+      list-style: none;
+    }
+
+    .footer-columns ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-columns ul li a {
+      text-decoration: none;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .footer-columns ul li a:hover {
+      color: #fff;
+    }
+
+    /* Bottom bar */
+    .footer-bottom {
+      background: #2f2f2f;
+      padding: 15px 20px;
+    }
+
+    .footer-bottom .bottom-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .footer-bottom a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-top {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .footer-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom .bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    }
