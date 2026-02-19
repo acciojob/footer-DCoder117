@@ -2,76 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Footer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="style.css">
+  <title>Exact Footer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-200">
 
-  <!-- Footer Start -->
-  <footer class="footer">
-    <div class="footer-container">
+<footer class="bg-black text-gray-300">
+  
+  <div class="max-w-6xl mx-auto px-8 py-12">
 
-      <!-- Home / About -->
-      <div class="footer-box">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Work</a></li>
-        </ul>
+    <!-- Top Row -->
+    <div class="flex justify-between items-center mb-10">
+      <h2 class="text-3xl text-white font-normal">company</h2>
+
+      <div class="flex space-x-4 text-white">
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600">
+          <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-sky-500">
+          <i class="ri-twitter-fill"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-pink-500">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-red-600">
+          <i class="ri-youtube-fill"></i>
+        </a>
       </div>
+    </div>
+
+    <!-- Links Section -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
 
       <!-- Links -->
-      <div class="footer-box">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+      <div>
+        <h3 class="text-white mb-4 border-b border-gray-600 inline-block pb-1">Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Get Started</a></li>
         </ul>
       </div>
 
       <!-- Services -->
-      <div class="footer-box">
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">UI/UX Design</a></li>
-          <li><a href="#">SEO Optimization</a></li>
-          <li><a href="#">Digital Marketing</a></li>
+      <div>
+        <h3 class="text-white mb-4 border-b border-gray-600 inline-block pb-1">Services</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#">App Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">Banner Design</a></li>
+        </ul>
+      </div>
+
+      <!-- Other services -->
+      <div>
+        <h3 class="text-white mb-4 border-b border-gray-600 inline-block pb-1">Other services</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Content Marketing</a></li>
+          <li><a href="#">Prints</a></li>
+          <li><a href="#">Social Media</a></li>
         </ul>
       </div>
 
       <!-- Contact -->
-      <div class="footer-box">
-        <h3>Contact</h3>
-        <p>Phone: <strong>8879887262</strong></p>
-        <p>Email: info@company.com</p>
-
-        <!-- Social Media Icons -->
-        <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
+      <div>
+        <h3 class="text-white mb-4 border-b border-gray-600 inline-block pb-1">Contact</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li>+91 8879887262</li>
+          <li>+91 8879887262</li>
+          <li>contact@company.com</li>
+        </ul>
       </div>
 
     </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>Copyright © 2021 company.</p> <p>Privacy policy</p>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-gray-800 text-gray-400 px-8 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between text-sm">
+      <p>Copyright © 2021 company.</p>
+      <a href="#" class="hover:text-white">Privacy policy</a>
     </div>
-  </footer>
-  <!-- Footer End -->
+  </div>
+
+</footer>
 
 </body>
 </html>
